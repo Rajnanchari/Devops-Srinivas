@@ -70,3 +70,40 @@ Why need version control system?
    .pull merges those changes to the current worrking directory.   
 
 
+Git Braching Stragy:
+
+Base-main-Major-sanpshot of project
+
+Dev
+QA/Test
+Releases Branch
+Features
+hotfix-production-Base
+
+git -- help
+
+
+collaboratols ==>add team member
+personal acess token ==>A/c security purpose used 
+
+.git commit -am ===>it  will working on exiting file
+.git commit -m ====> it will working on new file
+.git commint --amend ===> we can replace or mofified exiting file  msg 
+.git commit --amend -m "taskid:22 this is "
+.Before push after commit back the file using revert. once use git revert local data not reflect file.
+.Adding a tag to one of the previsous commit 
+   syntax :git tag -a <annotation> <commitid > -m <msg>
+   commit id can be obtained from git logs
+
+.All these tages can be viewd in git 
+    git show <tagname>
+ git push --tag ==>To push tag remote repository
+
+ git cherry-pick commit_ID enter
+
+ When you can create local branch push to remote we get got this msg
+    git push --set -upstream origin test
+
+ fork is a copy of repository forking a repository allow you to freely experiment with change affecting the original project   
+
+

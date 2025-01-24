@@ -111,7 +111,7 @@ git init : to initalize the git
 
 git --version : it gives the version of the git
 
-git config --global user.name "Bhanu" : to change username or to give username
+git config --global user.name "Raj" : to change username or to give username
 
 git config --global user.email "rajkumarnabchart@gmail.com" : to change email id or to give email id
 
@@ -160,7 +160,7 @@ This updates the remote repository with your latest commits,allowing others to a
 Git Stages :
 preview
 
-Commands:
+## Commands:
 
 git log : It displays the information about the history of commits
 
@@ -175,9 +175,10 @@ git log --oneline --author: It displays the information about commits of specifi
 git ignore : It ignores the formats of the file.
 
 touch .gitignore : We need to store the data of extensions that what we need to ignore in this file 
+
 git remote add origin https://github.com username/repository-name.git (add the github repository as a remote)
 
-git remote: This is the git command used to manage remote connections.
+git remote: This is the git command used to manage remote   connections.
 
 Remotes are versions of your project that are hosted on the internet or another network
 
@@ -187,33 +188,20 @@ Origin: origin is a conventionally used name for the primary remote repository .
 
 git push -u origin master: to push the files from local repository to github
 
-When we clone the very first time an empty repository,we will be having 2 folders 1. .git 2. readme
+When we clone the very first time an empty repository,we will be having 2 folders 1..git 2. readme
 
 Generate a token : Settings - developer settings - tokens(classic) - generate new token - generate new token (classic) - Select first five packages or all - click on generte token
 
 Branches :
 Branches help you manage different versions of your project and work on multiple developments simultaneously without affecting the main or other branches
 
-git branch : It displays the list of branches which we have
-git branch branch_name : It creates the new branch
-git checkout branch_name (or) git switch branch_name : to switch the branch
-git checkout -b branch_name : to switch and create the branch
-git branch -d branch_name : to delete the branch in local repository
-git push origin --delete branch_name : it will delete the branch in remote repository after deleting in local repository
-How can we rename a branch name ? Go for the settings inside a repository and scroll down there we can have an option called Default branch , there we can change our branch name
-
-Merge :
-Join two or more development histories together .
-
-A --- B --- C (test branch)
-
-|
-
-D --- E --- F --- G (Master branch)
-
-Difference between clone and pull :
-
-Purpose :
+.git branch : It displays the list of branches which we have
+.git branch branch_name : It creates the new branch
+.git checkout branch_name (or) git switch branch_name : to    switch the branch
+.git checkout -b branch_name : to switch and create the branch
+.git branch -d branch_name : to delete the branch in local repository
+.git push origin --delete branch_name : it will delete the branch in remote repository after deleting in local repository
+.How can we rename a branch name ? Go for the settings inside a repository and scroll down there we can have an option called Default branch , there we can change our branch name
 
 Clone : Creates a copy of the entire repository locally
 

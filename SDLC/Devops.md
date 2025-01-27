@@ -1,13 +1,4 @@
 ## DevOps Lifecycle
-
-
-
-
-
-
-
-
-![Preview]()
 ## 1.Plan
 The first stage of the DevOps lifecycle, where you plan, track, visualize, and summarize your project before starting it.
 
@@ -82,3 +73,31 @@ Monitoring Tools:
 
      Prometheus
      Grafana
+
+
+## DevOps    
+       .windows -->O.S
+       .scm------->Git
+     .Build Tools--->Apache Maven
+     .Web Server---->Apache Tomcat
+     .CI/CD---------->Jenkins
+
+ ====================================
+
+           Linux -- 
+           cloud,cloud computing
+           Instanace-->Aws or Azure
+           Linux--
+           scm---
+           .Build Tools--->Apache Maven
+           .Web Server---->Apache Tomcat
+           .CI/CD---------->Jenkins
+             one mini project
+=====================================
+
+          containerization-->Docker
+          container orchication-->k8'S
+          Monitoring--->Prometheus with Grafana
+          cloud service
+          Iac------>teraform
+           

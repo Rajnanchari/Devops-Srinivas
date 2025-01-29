@@ -34,8 +34,10 @@
           mvn deploy 
 
 ###  What is .m2 folder ? 
-.For sharing with other developers and project .m2 folder
-.m2 folder is a folder in a local repositories and apache maven where dependency and plugin is stored 
+     .For sharing with other developers and project .m2 folder
+      .m2 folder is a folder in a local repositories and apache maven where dependency and plugin is stored 
+
+
 ### Apache Maven has a advantage 
     . apache maven has a advantage that is when we run any of the life-cycle phase which is also includes previous life cycle phase as well 
     E.g: If we run "mvn package" (which is 4th phase) we should also run previous phase as well (validate, compile, test)
@@ -54,6 +56,7 @@
 	.Do mvn test
 	.vi pom.xml 
 	https://ajaconsultingservicesllp-my.sharepoint.com/:t:/g/personal/s_chunchu_ajacs_in/EZuE9nEpo05LuePhLOwgKtUB6CzC6DRL2ZaH_z6kPUulQQ?e=bJcJY9  copy plugin paste here 
+	![](Image/mavnbuild.png)
 
 	.Do mvn package 
 	Build success here and generate target floder

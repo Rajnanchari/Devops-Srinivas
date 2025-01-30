@@ -44,8 +44,7 @@
     
 	 you can run mvn validate with in project only 
 
-	 ### working Maven Artifacat generate  
-
+###	  working Maven Artifacat generate 
 	 .After install maven and java open git bash cd to one drive like [cd D:]
 	 .Next paste the link this 
 	 [mvn archetype:generate -DgroupId=com.example -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false ]
@@ -56,8 +55,17 @@
 	.Do mvn test
 	.vi pom.xml 
 	https://ajaconsultingservicesllp-my.sharepoint.com/:t:/g/personal/s_chunchu_ajacs_in/EZuE9nEpo05LuePhLOwgKtUB6CzC6DRL2ZaH_z6kPUulQQ?e=bJcJY9  copy plugin paste here 
-	![](Image/mavnbuild.png)
+	
 
 	.Do mvn package 
 	Build success here and generate target floder
 	enter ls see here .war Artifact
+![](images/mavnbuild.png)
+![](images/mvn2.png)
+![](images/mvn3.png)
+![](images/mvn4.png)
+![](images/mvn5.png)
+![](images/mvn6.png)
+![](images/mvn7.png)	
+	
+	

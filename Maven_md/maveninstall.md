@@ -1,5 +1,5 @@
 introduction to MAVEN
-=================================
+
  Maven is a tool that is used to compile ,validate codes ,and analyze the test-cases in the code .
 
 --> manages the building ,reporting and documentation from source code management(SCM)
@@ -8,7 +8,6 @@ introduction to MAVEN
 
 
 ## what is the capable of maven
-========================================
 
    . information of the project is centralized through maven 
    . our software project is modeled by it
@@ -18,7 +17,6 @@ introduction to MAVEN
     . Deployable artifacts can be generated from source code 
 
 ### Maven Build Life-Cycle
-===================================
 
 --> in Maven , the build is run using a predefined and ordered set of steps to call the build life cycle 
 --> The Build task that will be performed during the each phase are determined by the configuration in the selected packaging 
@@ -32,7 +30,6 @@ introduction to MAVEN
 
 
 ## Maven Artifacts 
-=========================
 
 --> An artifact is an file resulting from packaging a project 
 --> can be a jar, war, ear ,xml file  these are some examples 
@@ -45,11 +42,10 @@ introduction to MAVEN
 
 
 ## project object model (POM)
-================================
 
 --> POM for short 
 --> XML file located at root of the project(pom.xml)
---> it includes configuration for your projects including :
+--> it includes configuration for your projects including 
 
        . information about the project 
        . configuration details to build the project 
@@ -59,6 +55,7 @@ introduction to MAVEN
        . used repositories 
 
 ### Maven repository flow:
+
  Step1: when developer executes mvn command it will go and checkin local repository.If found the dependencies or plugins in the local repository developers will see the output.
 
   Step2: If not found in the local repository from developer machines it will go and search in remote repository
@@ -68,7 +65,6 @@ introduction to MAVEN
 Step4: from the local repository developer will get the output.
 
 ### project object model:
-
      pom for short
 
      xml file located at the root of the project(pom.xml)

@@ -111,6 +111,10 @@ Step4: from the local repository developer will get the output.
       administrator priviliges  
       How to install java 
 
+        Step 1: Add Java to System Variables
+                 Step 2: Add JAVA_HOME Variable
+
+
        First go to the browser and search Download java 
 	• Select windows and select 64 Installer click on the link 
 	• so after clicking on the link the java jdk will be download it into your local machine 
@@ -119,9 +123,9 @@ Step4: from the local repository developer will get the output.
           After selecting the path go to edit the system environment variables then click on ev select new gave variable name as JAVA_HOME and that path which you have copied from the jdk
           Select Path in variable path then click on edit then click on new paste the jdk path here also 
           ckeck on command prompt search java -version then it will show you what version you have download 
-  
-
-
+               
+         
+              
 
 
 

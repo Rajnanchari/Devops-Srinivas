@@ -84,5 +84,76 @@ you can use drag and drop to add new content or replace existing deployment simp
     Domain Controller: The master server acts as the domain controller, responsible for distributing configuration and deployments to the slave servers. 
     Configuration File: The domain.xml file defines the domain configuration, including the master and slave servers, and their communication details. 
 
-   
-                        
+### confguration :
+     Things to keep in mind before changing confguration changes.
+
+     1)where to change
+     2)Backup
+     3)How to change
+     4)Try or Experiment in local Enviroment
+     5)Documentation
+
+### Snapshot
+
+   for wildfly -confguration
+    Home folder of wildfly-->standalone--->confguration-->standalone-xml-history
+    FileName:Standalone.v1
+    eg:port number change
+
+Need to rename the original or existed file and then replace the customzed
+as per reqirment/change
+
+Different status of the artifacts deployed in wildfly :
+
+  in wildfly ,deployed artifacts can have various status states
+
+      Deployed: The application is successfully deployed and running on the WildFly server.
+      Undeployed: The application has been removed from the server and is no longer running.
+      Failed: An error occurred during deployment, preventing the application from starting.
+      Starting: The application is currently being initialized and is not yet fully available.
+      Stopping: The application is in the process of being gracefully shut down.
+     Suspended: The application is temporarily paused and not accepting requests.
+     Redeploying: An existing deployment is being updated with new code and restarted. 
+
+
+wildfly management console :
+     you can view the status of deployed artifact through the wildfly admin console
+     which provides a list of deployments within current state.
+
+ CLI(command line interface)
+   using the wildfly command-line interface. you can query the status of deployment with management command.
+
+   indicating whether the application is currently running, being deployed, experiencing issues, or undergoing a state change. 
+### Domain & Host controller in wildfly:
+      In JBoss wildfly , a "domain controller " is the central management point for a group of server within a domain ,responsible
+      for maintaing the  overall configuration and policy.
+
+      while "a host controller" is a separate process running on each server within the domain , communicating 
+      with the domain controller to manage the individual server instances on the host machine
+
+      essentially , the domain controller dicatates the overall confguration, and the host controllers execute those
+      confguration on their respcetive service.
+
+      key points about domain and controller:
+
+ Domain controller:
+ a)Act as the central management point for the entire domain.
+
+ b)Stores the domain-wide confguration in the file called "domain.xml"
+     [Home folder>Domain>confguration>domain.xml]
+
+c)Responsible  for distributing confguration changes to all host controlles within the domain
+
+
+### Host Controller:
+
+  a) manages the appication server instances running on a specific host.
+
+  b)Reds its configuration from a "host.xml" file specific to that host.
+    [ Home folder >Domain>confguration>host.xml] 
+
+  c)communicates with the domain controller to receive confguration updates and start/stop server instances.
+
+      DC HC-Domain Control Host Control
+      Domain is referring to centralised or master wildfly where we can manage other-(host) wildfly servers. 
+

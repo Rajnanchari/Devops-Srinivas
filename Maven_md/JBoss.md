@@ -7,6 +7,9 @@
    go to wildfly.org/downloda 
           current version 35 
 
+### How to shutdown Jboss wildfly in windows(task)?
+       bin-->jboss-cli.bat(click on this file and type command shutdown)
+
 #### Port number of wildfly 
      9990======>Admin
      8080======>Application  /Artifacts

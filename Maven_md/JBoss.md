@@ -73,14 +73,13 @@ you can use drag and drop to add new content or replace existing deployment simp
 
    3)JBOSS wildfly GUI------->upload Artifact 
 
-   How we can change defult port number of wildfly 
+  ### How we can change default port numbers of wildfly (9990 and 8080)task.
+     standalone-->configurations-->standalone.xml and standalone-full.xml(change port numbers here)
 
-      -->mgmt console and application port number
-
-    How we configure master.
-
-       -->slave configuration in wildfly
-
+### How we can configure master/slave architecture in wildfly
+    Domain Mode: WildFly must be run in domain mode to enable master/slave functionality. 
+    Domain Controller: The master server acts as the domain controller, responsible for distributing configuration and deployments to the slave servers. 
+    Configuration File: The domain.xml file defines the domain configuration, including the master and slave servers, and their communication details. 
 
    
                         

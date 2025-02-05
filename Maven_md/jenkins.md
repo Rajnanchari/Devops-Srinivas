@@ -19,12 +19,12 @@ continuous integration and its importance
       CI/CD(continuous Integration /continuous deliver or continuous deploymement delivery also knows as Release)
 
 ### Popular continuous integration Tools
-   .Gitlab cl
-   .codeship
-   .Bamboo
-   .jenkins
-   .Teamcity
-   .Travisci
+     .Gitlab cl
+     .codeship
+     .Bamboo
+     .jenkins
+     .Teamcity
+     .Travisci
 
    from Aws cloud if we want to perform CI/CD there are various servers like code commint ,code deploye , code guru,
    code pipeline, code build 
@@ -48,12 +48,12 @@ continuous integration and its importance
 
 ### Topics
 
-   .Jenkins Arechitecture
-   .plugin management in jenkins
-   .jenkind security management 
-   .Notification master slave arechitecure
-   .Jenkins Delivery pipline
-   .jenkins Delartive pipline
+      .Jenkins Arechitecture
+      .plugin management in jenkins
+      .jenkind security management 
+      .Notification master slave arechitecure
+      .Jenkins Delivery pipline
+      .jenkins Delartive pipline
 
 ### Jenkins Architecture Source control management
 
@@ -101,12 +101,16 @@ avoid this we should configure http proxy in Jenkins plugin of advanced tab.
 
       steps:
           1)Browse to the downloads page of Jenkins under the downloading Jenkins section is a list of installers for the long-term support version of Jenkins
+
           click the windows link to begin the download download Jenkins 2.479.3
+
           once you click on windows text under download Jenkins
 
          a)once after downloading need to go to downloaded folder double click on Jenkins which is of type windows install package.
+
          b)The setup wizard starts click next to proceed
-         c)select the install destination folder and click next to continue
+         c)select the install destination folder and   click next to continue
+
          d)under the run service as a local or domain user option, enter the domain username and password for the user account you want to run Jenkins with. click test credentials to verify
          the login data, then click next to proceed
          Logon type 
@@ -114,33 +118,37 @@ avoid this we should configure http proxy in Jenkins plugin of advanced tab.
 
          e) enter the port number you want Jenkins to run on. click test port to check if the slected port is available, then click next to continue
           default port no of Jenkins 8080
+
         f)select the directory where java is installed on your system and click next to proceed
         g)select the features you want to install with Jenkins and click next to  continue
+
         h)click install to start the installation process
 
 ### how to configure Jenkins:
 
-                .After completing installation process you have to unblock Jenkins before you can customize and start using it.
-                .In your web browser, navigate to the default port number you select during the installation using the following address http://localhost:8080
-                .navigate to the location on your system specified by the unblock Jenkins page 
-                please copy the password from location
-                c:/ProgramData/Jenkins/.jenkins/secrets/initialAdminPassword
-                where initial Admin password is a file inorder to read the data of that file use cat command
-                cat c:/ProgramData/Jenkins/.jenkins/secrets/initialAdminPassword
-                copy the password from the inital Admin Password file
-                paste the password in the administrator password field on the unblock Jenkins page and click continue to proceed
-                once you unlock Jenkins customize and prepare the Jenkins environment
-                click the install suggested plugins button to have Jenkins automatically install the most frequently used plugins
-                after Jenkins finishes installing the plugins anter the required information on the create first admin user page. click save and continue to proceed
+        .After completing installation process you have to unblock Jenkins before you can customize and start using it.
+        .In your web browser, navigate to the default port number you select during the installation using the following address http://localhost:8080
+        .navigate to the location on your system specified by the unblock Jenkins page 
+        please copy the password from location
+         c:/ProgramData/Jenkins/.jenkins/secrets/initialAdminPassword
+        where initial Admin password is a file inorder to read the data of that file use cat command
+        cat c:/ProgramData/Jenkins/.jenkins/secrets/initialAdminPassword
+        copy the password from the inital Admin Password file
+         paste the password in the administrator password field on the unblock Jenkins page and click continue to proceed
+         once you unlock Jenkins customize and prepare the Jenkins environment
+        click the install suggested plugins button to have Jenkins automatically install the most frequently used plugins
+         after Jenkins finishes installing the plugins anter the required information on the create first admin user page. click save and continue to proceed
 
 ### How to stop the jenkin server on windows:
-                   In windows search option search for services and select search for J(left side stop)option
+    In windows search option search for services and select search for J(left side stop)option
 
 ### how to restart the Jenkins
      safe restart go to url of Jenkins
      http://localhost:8080/safeRestart
+
      Jenkins will try to pause jobs and restart once all running jobs are either finished or paused
      Jenkins is restarting banner
+     
      this will be displayed on most Jenkins pages, you can use it to let users know what is happening a default message will be added if you dont supply one.
 
 

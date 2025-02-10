@@ -79,3 +79,21 @@
 ###  What is BDD (Behavior-Driven Development)?
      BDD is an extension of TDD that focuses on defining application behavior in a human-readable format. It encourages collaboration between developers, testers, and non-technical stakeholders (e.g., business analysts).
 
+### 10-02-2025 How to create new project/item/job from existing job ?
+ 
+    click on new item
+
+         |
+
+    give job name
+
+         |
+
+     and select item 
+
+(scroll down bottom, where we can see copy from option in cpy from tab we need to pause the job name which we want make use of existing job configuration)
+
+    example: Create job 10(take the reference of job 8 configuration)
+
+ 
+ 

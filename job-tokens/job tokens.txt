@@ -1,0 +1,45 @@
+
+
+http://localhost:9999/job/DevFloder/job/freestyleDev/build?token=dev
+
+http://localhost:9999/job/DevFloder/job/freestyleDev/build?token=dev
+
+
+1198aae441a6be4e5969807171548b4488          devtoken    id:rajkumardev
+
+
+curl -u rajkumardev:1198aae441a6be4e5969807171548b4488 -X POST http://localhost:9999/job/DevFloder/job/devwithAPI/build
+
+http://localhost:9999/job/DevPipelineFolder/job/devwithoutapi/build?token=devpipeline
+
+
+11432666ff2e4c6bfeae93c85781948bf2          devpipelinetoken   id: rajkumardev
+
+
+curl -u rajkumardev:11432666ff2e4c6bfeae93c85781948bf2 -X POST http://localhost:9999/job/DevPipelineFolder/job/devwithapi/build
+
+http://localhost:9999/job/QAFreestyle/job/qawithoutapi/build?token=qafreestyle
+
+116328571868dcaeaf41a15c6b7d5e406e   QATokenFree    id:rajkumarqa
+
+curl -u rajkumarqa:116328571868dcaeaf41a15c6b7d5e406e -X POST http://localhost:9999/job/QAFreestyle/job/withapi/build
+
+
+http://localhost:9999//job/QAPipelineFolder/job/qapipe/build?token=qa
+
+11a05a708ef3755b26e4c1243c64fe913d     QAPipelineToken    rajkumarqa
+
+curl -u  rajkumarqa:11a05a708ef3755b26e4c1243c64fe913d  -X POST http://localhost:9999/job/QAPipelineFolder/job/QAwithAPI/build
+
+http://localhost:9999/job/ProdFloder/job/withoutAPI/build?token=prod
+
+11b38d65945f01e6e6ed9fffacd0fa39c9    prodfree  id: rajkumarprod
+
+curl -u rajkumarprod:11b38d65945f01e6e6ed9fffacd0fa39c9 -X POST http://localhost:9999/job/ProdFloder/job/prodwithAPI/build 
+
+http://localhost:9999/job/prodpipefloder/job/prod/build?token=prod
+
+11cb79da69ad387ed32709e05de6fd4f09    prodpipe  id:rajkumarprod
+
+curl -u rajkumarprod:11cb79da69ad387ed32709e05de6fd4f09 -X POST http://localhost:9999/job/prodpipefloder/job/prodwithAPI/build
+

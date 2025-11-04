@@ -1,0 +1,202 @@
+
+
+
+
+var inc = GlideRecord('incident');
+inc.orderByDesc('sys_crated_on');
+inc.setLimit(5);
+inc.query();
+while(inc.next()){
+gs.print(inc.number + ', ' + inc.short_description);
+
+}
+==============================================================================================
+
+working with 
+
+
+
+
+e1.setError('start must be before end');
+       current.setAbortAction(true);
+}
+}
+===============================================================================================
+working with  
+var inc = GlideRecord('incident');
+inc.addQuery('category','hardware');
+inc.setValue('category','software');
+inc.updateMultiple();
+--------------------------------
+EX 2*
+var inc = new GlideRecord('incident');
+inc.addQuery('active=true);
+inc.query();
+while(inc.next()){
+inc.active = false;
+gs.print('Active incident' + inc.nuber + 'closed');
+
+rec.update();
+} 
+-----------------------------------------------------
+Single Update Record:
+
+var inc = new GlideRecord('incident');
+inc.get('number','INC0010006');
+inc.setValue('state',2);
+inc.update();
+
+===================================================
+var inc = new GlideRecord('incident');
+inc.addQuery('priority',4);
+inc.query();
+inc.deleteMulpite();
+
+var inc = new GlideRecord('incident');
+inc.get('number','INC0010013');
+inc.deleteRecord();
+
+=========================================
+var inc =new GlideRecord('incident');
+inc.newRecord();
+inc.short_descrption='New record creation';
+inc.category='software';
+inc.insert();
+gs.print(inc.number);
+================================================================================
+
+var ga = new GlideAggregate("incident");
+//ga.addQuery("active',true");
+ga.addEncodeQuery("active=true");
+ga.addAggregate("COUNT");
+ga.query();
+if(ga.Next())
+{
+var count = ga.getAggregate("COUNT")
+gs.print(coun
+}
+============================================================
+
+if(current.assigment_group)
+{
+   var assigmentgroup = current.assigment_group;
+   var inccount = new GlideAggregate('incident');
+   inccount.addQuery('assgment_group',assigmentgroup);
+   inccount.addAggregate('COUNT');
+   if(inccount.next())
+{
+   current.u_incident_count=inccount.getAggregate('COUNT');
+
+}
+-----------
+
+    if (current.assignment_group) {
+        var assigmentgroup = current.assignment_group;
+        var incCount = new GlideAggregate('incident');
+        incCount.addQuery('assignment_group', assigmentgroup);
+        incCount.addAggregate('COUNT');
+        incCount.query();
+        if (incCount.next()) {
+
+            current.u_inccount = incCount.getAggregate('COUNT');
+        }
+
+    }
+
+===================================================================
+
+
+var group = new GlideRecord('sys_user_group');
+group.addQuery('name','software');
+group.setLimit(1);
+group.query();
+if(group.next()){
+if(gs.hasRoleInGroup('admin',group)){
+gs.print('person in group');
+}
+else{
+gs.print('person not in  group');
+}
+}
+
+==============================================
+
+    type: 'jevithaKalam',
+    find: function() {
+        var data = [];
+        var group = current.u_assigend_group_1;
+        var gr = new GlideRecord("sys_user_grmember");
+        gr.addQuery("group", group);
+        gr.query();
+        while (gr.next()) {
+            data.push(gr.getValue("user"));
+        }
+        return "sys_id"+"IN"+data.join(", ")// javascript:newjevithaKalam().find();
+
+//u_assigend_group_1
+    }
+};
+
+======================================================
+scrpit include
+var singalField = Class.create();
+singalField.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    type: 'singalField',
+	managerField:function(){
+		var caller =this.getParameter("sysparm_req");
+		var gr = new GlideRecord("sys_user");
+		gr.addQuery("sys_id",caller);
+		gr.query();
+		while(gr.next()){
+			var mgr =gr.getDisplayValue("manager");
+		}
+		return mgr;
+	}
+});
+
+
+client Script
+
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var gs = new GlideAjax("singalField");
+    gs.addParam("sysparm_name", "managerField");
+    gs.addParam("sysparm_req", g_form.getValue("caller_id"));
+    gs.getXML(manager);
+
+    function manager(response) {
+        var result = response.responseXML.documentElement.getAttribute("answer");
+        g_form.setValue("u_manager",result);
+    }
+
+
+}
+===========================
+singal record create multiple times
+var inc =new GlideRecord('incident');
+for(i=0;i<3;i++){
+inc.initialization();
+inc.short_descrption='New record creation';
+inc.category='software';
+inc.insert();
+gs.print(inc.number);
+}
+=============================================================
+ multtiple Record Creation 
+var inc =new GlideRecord('incident');
+for(i=0;i<3;i++){
+inc.newRecord();
+inc.short_descrption='New record creation';
+inc.category='software';
+inc.insert();
+gs.print(inc.number);
+}
+===============================
+
+
+
+
+

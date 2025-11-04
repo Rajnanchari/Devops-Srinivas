@@ -1,0 +1,74 @@
+
+Subject-verb agreement refers to the grammatical rule that the verb in a sentence must match the number, person, and sometimes gender of the subject. Here are some key points
+             or
+
+Subject-Verb Agreement refers to the grammatical rule that the subject and verb in a sentence must agree in number (singular or plural). This means that a singular subject takes a singular verb, and a plural subject takes a plural verb. Here’s a breakdown of the rules:
+
+1. Singular Subjects Take Singular Verbs
+Example: The cat runs fast.
+
+Explanation: "Cat" is singular, so the verb "runs" must be singular.
+
+2. Plural Subjects Take Plural Verbs
+Example: The cats run fast.
+
+Explanation: "Cats" is plural, so the verb "run" is plural.
+
+3. When the Subject Is "There" or "Here"
+The subject follows the verb, so you use a verb that agrees with the actual subject.
+
+Example: There is a book on the table. (singular subject)
+
+Example: There are books on the table. (plural subject)
+
+4. Compound Subjects (Subjects Joined by "And")
+When two subjects are joined by "and," use a plural verb.
+
+Example: The dog and the cat are friends.
+
+5. Subjects Joined by "Or" or "Nor"
+If the subjects are joined by "or" or "nor," the verb agrees with the subject closest to the verb.
+
+Example: Neither the teacher nor the students were late.
+
+Example: Either the dog or the cat is responsible.
+
+6. Indefinite Pronouns as Subjects
+Some indefinite pronouns are always singular, some are always plural, and others can be either singular or plural depending on the context.
+
+Singular: anyone, everyone, someone, nobody, anything, everything
+
+Example: Everyone is invited to the party.
+
+Plural: both, few, many, several
+
+Example: Many are coming to the event.
+
+Singular or Plural: all, some, most, none, more
+
+Example: All of the cake is gone. (singular, referring to the cake)
+
+Example: All of the cookies are gone. (plural, referring to the cookies)
+
+7. Collective Nouns
+Collective nouns (e.g., team, group, family) can be singular or plural depending on whether you're thinking of the group as a whole or as individuals.
+
+Singular: The team is playing well. (the group as a whole)
+
+Plural: The team are arguing among themselves. (individual members of the team)
+
+8. Exceptions and Irregularities
+Example: The news is on TV. (Even though "news" ends in -s, it is treated as singular.)
+
+Example: The mathematics is hard. (Same reason as "news.")
+
+9. With "Either" or "Neither"
+"Either" or "Neither" can refer to singular or plural nouns based on context, but usually, the verb agrees with the closest noun.
+
+Example: Either the teacher or the students are going.
+
+Example: Neither the students nor the teacher was late.
+
+
+
+

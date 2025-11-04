@@ -1,0 +1,21 @@
+ sudo apt update
+    3  git
+    4  git clone https://github.com/Rajnanchari/Aja_DPR_Project.git
+    5  ls
+    6  cd Aja_DPR_Project/
+    7  ls
+    8  cd dpr-frontend/
+    9  ls
+   10  cat package.json
+   11  clear
+   12  npm install
+   13  sudo apt install npm
+   14  npm
+   15  npm install
+   16  npm run build
+   17  ls
+   18  sudo apt update
+   19  sudo apt install -y nginx
+   20  sudo rm -rf /var/www/html/*
+   21  sudo cp -r dist/* /var/www/html/
+   22  sudo systemctl restart nginx

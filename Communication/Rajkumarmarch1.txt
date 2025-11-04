@@ -1,0 +1,81 @@
+1)Tell me about yourself
+2)what are the roles and responsibilities prevision organazation.
+3)share your project exp.
+4)explanin pipeline stages
+5)Different between rebase and restore
+6)how to backup Jenkins
+7)what is CI/CD
+8)how to change apache tomcat port number.
+9)what is jboss
+10)what tools you have used for CICD
+11)what type of Jenkins pipeline are using.
+12)In master what need to be installed and in slave what need to be installed.
+13)if i want automate process code is push to git hub what are the step to want to do.
+=====================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Good morning, Aja rockstars! skill be job bi aja ki sath !
+
+This is your one and only RJ Raj from DevOps, back on the mic to make your workday a little less boring and a whole lot more fun!
+
+I have a question for you rockstars----"If you could switch job roles with anyone in our office for a day, who would it be and why? Think about it while I take you through some national news headlines. Stay tuned because this show is about to get interesting!"
+
+Riddle Time!
+"What is something that you have but can't touch, you can change whenever you want, and you use every day but have never seen me. What am I?"
+
+ Word of the Day
+Brook – A small stream.
+Example: even today people have to walk milles to search for their thirst.
+
+
+Today's Announcements
+
+🎉 First up:
+A very Happy Birthday to our amazing teammate Arun Kumar Akula! 🥳
+Let’s wish him all together — Happy Birthday, Arun! 🎂🎈🎉
+
+💼 Second one:
+Wishing Abdul Ameel from DevOps the very best for his 11 AM L1 Interview today with Deqode company!
+Go in with confidence and come out with success! 💪✨
+
+Signing off with a smile — this is RJ Rajkumar, reminding you to stay awesome, stay kind, and keep rocking!
+
+
+
+
+
+
+
+
+
+

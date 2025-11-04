@@ -1,0 +1,57 @@
+
+
+
+Parts of Speech in English
+There are 8 main parts of speech in English:
+
+1. Noun (Naming word)
+➡ Names of people, places, things, or ideas.
+🔹 Examples: Rajkumar, Hyderabad, laptop, happiness
+📌 Rajkumar is a DevOps engineer.
+
+2. Pronoun (Replaces a noun)
+➡ Used instead of a noun to avoid repetition.
+🔹 Examples: he, she, it, they, we, you, this
+📌 He works in AJACS LLP.
+
+3. Verb (Action word)
+➡ Shows action or state of being.
+🔹 Examples: run, write, is, deploy
+📌 Rajkumar writes scripts for automation.
+
+4. Adjective (Describes a noun or pronoun)
+➡ Tells more about a noun (size, color, shape, etc.).
+🔹 Examples: big, fast, intelligent, blue
+📌 He is an experienced DevOps engineer.
+
+5. Adverb (Describes a verb, adjective, or another adverb)
+➡ Tells how, when, where, or how much something happens.
+🔹 Examples: quickly, yesterday, very, always
+📌 He speaks fluently in English.
+
+6. Preposition (Shows relation between words)
+➡ Shows position, direction, or time.
+🔹 Examples: in, on, at, under, between
+📌 The files are in the cloud.
+
+7. Conjunction (Joins words or sentences)
+➡ Connects words, phrases, or clauses.
+🔹 Examples: and, but, or, because, so
+📌 He uses AWS, Kubernetes, and Terraform.
+
+8. Interjection (Expresses emotion)
+➡ Short exclamations of emotion.
+🔹 Examples: Wow!, Oh!, Oops!, Hey!
+📌 Wow! This automation is amazing!
+
+
+present simple               subject +v1+object======================> Everyday i plays football.
+present continuous           subject +am/is/are+v1+ing+object          They are playing foot ball.
+Present Perfect	             subject +has/have+v3+object               They have eaten food.
+present perfect continuous   subject +has/have been+v1+ing+obj         They have been playing football.
+
+past simple              subject +v2+object     ==========>
+past continuous          subject +was/were+v1+ing+obj=====>
+past perfect             subject +had+v3+obj==============>
+past perfect continuous  subject +had been +v1+ing+obj====>
+ 

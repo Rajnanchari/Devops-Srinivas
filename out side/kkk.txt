@@ -1,0 +1,93 @@
+function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+    var callerDetails = g_form.getValue('caller_id');
+
+    var ga = new GlideAjax('  ');
+    ga.addParam('sysparm_name', 'getCallerInfo');
+    ga.addParam('sysparm_Value', callerDetails);
+    ga.getXML(callback);
+
+    function callback(response) {
+        var answer = response.responseXML.documetElement.getAttribute('answer');
+        var test = answer.split(',');
+        g_form.setValue('u_caller_s_email', test[0]);
+        g_form.setValue('u_caller_s_location', test[1]);
+        g_form.setValue('u_caller_s_manger', test[2]);
+    }
+
+
+}
+========================================================
+
+var callerInfo = Class.create();
+callerInfo.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+
+    getCallerInfo: function() {
+        var sysIdCaller = this.getParameter('sysparm_Value');
+        var x = new GlideRecord('sys_user');
+        x.addQuery('sys_id', sysIdCaller);
+        x.query();
+        while (x.next()) {
+            var callerEmail = x.email;
+            var callerLocation = x.location;
+            var callerManger = x.manager;
+                 
+              var data = callerEmail + ',' + callerLocation + ',' + callerManger;
+        
+
+            // gs.log("Caller Details are" + x.email + ' ,' + x.location + ',' + x.manager);
+                 return data;
+        }
+
+    },
+    type: 'callerInfo'
+});
+=====================================================================================
+
+var group = new GlideRecord('sys_group');
+group.query();
+while(group.next()){
+var grMember = new GlideRecord('sys_user_grmember';
+grMember.addQuery('group',group.sys_id);
+grMember.query();
+if(!grMember.next()){
+gs.addInfoMessage("The Group "+group.name+ "does not have any member inside them");
+}
+)
+}
+=============================================================================================
+
+Script Side:
+Name:getData
+
+dataGet:function()
+{
+   var gr = new GlideRecord("sys_user");
+    gr.addQuery("sys_id",caller);
+gr.query();
+while(gr.next()){
+data = {
+manager=mgr,
+location=loc,
+department=dept,
+phone_number=ph
+};
+var data ={
+   
+
+ ====================================================================================
+
+
+
+
+
+
+
+
+
+
+  
+   

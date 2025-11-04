@@ -1,0 +1,114 @@
+working on CloudFront  
+    sudo vi /etc/hostname
+     sudo inti 6
+      sudo apt update
+      apt list --upgradable
+      sudo init 6
+      nginx
+      sudo apt install nginx
+      sudo systemctl status nginx
+       cd /var/www/html/
+     sudo rm index.nginx-debian.html
+     sudo vi index.html
+     sudo systemctl restart nginx
+    sudo systemctl status nginx
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior DevOps Engineer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ffe600;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px #000;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 10px 0;
+      background: #ffffff20;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000050;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #00ffff;
+      font-weight: bold;
+      margin-top: 20px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .pipeline {
+      background: #ffffff30;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin: 15px 0;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 1.8em;
+      color: #ff69b4;
+      box-shadow: 0 0 8px #fff;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #eee;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateX(-100%); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" alt="Logo" class="logo">
+  <h1>Welcome to Senior DevOps Engineer</h1>
+  <div class="pipeline">Ec2 &gt; LB &gt; ASG &gt; CDN &gt; R53</div>
+  <p>Welcome Aja</p>
+
+  <footer>&copy; 2025 DevOps Solutions. All rights reserved.</footer>
+</body>
+</html>

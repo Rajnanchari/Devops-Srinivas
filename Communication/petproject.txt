@@ -1,0 +1,89 @@
+ java
+    2  apt update
+    3  java
+    4  apt install openjdk-17-jre-headless
+    5  cd /opt/
+    6  ls
+    7  wget https://tomcat.apache.org/[preferred]tomcat/tomcat-9/v[v]/bin/apache-tomcat-[v].tar.gz
+    8  cd
+    9  cd opt/
+   10  cd /opt/
+   11  wget https://tomcat.apache.org/[preferred]tomcat/tomcat-9/v[v]/bin/apache-tomcat-[v].tar.g
+   12  cd
+   13  exit
+   14  ls
+   15  mv apache-tomcat-9.0.102.tar.gz apache
+   16  ls
+   17  tar -xzvf apache
+   18  ls
+   19  cd apache-tomcat-9.0.102/
+   20  ls
+   21  cd bin/
+   22  ls
+   23  ./startup.sh
+   24  cd ..
+   25  find -name context.xml
+   26  vi ./webapps/host-manager/META-INF/context.xml
+   27  vi ./webapps/manager/META-INF/context.xml
+   28  cd conf/
+   29  ls
+   30  vi tomcat-users.xml
+   31  cd ..
+   32  wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+   33  ls
+   34  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+   35  ls
+   36  sudo apt update
+   37  sudo apt install postgresql-13
+   38  sudo systemctl is-enabled postgresql
+   39  sudo systemctl status postgresql
+   40  sudo -u postgres psql
+   41  sudo useradd -b /opt/sonarqube -s /bin/bash sonarqube
+   42  sudo nano /etc/sysctl.conf
+   43  sudo sysctl --system
+   44  vm.max_map_count = 524288
+   45  ulimit -n 131072
+   46  ulimit -u 8192
+   47  sudo nano /etc/security/limits.d/99-sonarqube.conf
+   48  sudo apt install unzip software-properties-common wget
+   49  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.6.1.59531.zip
+   50  unzip sonarqube-9.6.1.59531.zip
+   51  mv sonarqube-9.6.1.59531 /opt/sonarqube
+   52  sudo chown -R sonarqube:sonarqube /opt/sonarqube
+   53  nano /opt/sonarqube/conf/sonar.properties
+   54  sudo nano /etc/systemd/system/sonarqube.service
+   55  sudo systemctl daemon-reload
+   56  sudo systemctl start sonarqube.service
+   57  sudo systemctl enable sonarqube.service
+   58  sudo systemctl start sonarqube.service
+   59  sudo systemctl enable sonarqube.service
+   60  sudo systemctl status sonarqube.service
+
+===============================================================================================================
+  apt update
+    2  java
+    3  apt install openjdk-17-jre-headless
+    4  ls
+    5  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    6  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    7  sudo apt-get update
+    8  sudo apt-get install jenkins
+    9  cat /var/lib/jenkins/secrets/initialAdminPassword
+   10  cd
+   11  git clone https://github.com/spring-petclinic/spring-framework-petclinic.git
+   12  ls
+   13  cd spring-framework-petclinic/
+   14  ls
+   15  cd ..
+   16  mvn
+   17  apt install mavenapt install maven
+   18  apt install maven
+   19  ls
+   20  cd spring-framework-petclinic/
+   21  ls
+   22  mvn package
+   23  ls
+   24  cd target/
+   25  ls
+   26  history
+root@ip-172-31-12-91:~/spring-framework-petclinic/target#

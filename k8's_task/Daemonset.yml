@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx-daemonset
+  labels:
+    app: nginx
+spec:
+  selector:
+    matchLabels:
+      app: nginx-daemon
+  template: 
+    metadata:
+      labels:
+        app: nginx-daemon
+    spec:
+      containers:
+      - name: nginx-daemon
+        image: nginx
+        ports:
+        - containerPort: 80
+ 
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec: 
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: nginx-deployment
+  template:
+    metadata:
+      labels:
+        app: nginx-deployment
+    spec:
+      containers:
+      - name: nginx-daemon
+        image: nginx
+        ports:
+        - containerPort: 80

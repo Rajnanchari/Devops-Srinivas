@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Declare an array
+declare -a fruits=("Apple" "Banana" "Orange")
+
+echo "All Fruits:"
+for fruit in "${fruits[@]}"
+do
+   echo "$fruit"
+done
+
+# Append an element
+fruits+=("Grapes")
+
+# Print length of array
+echo "Number of fruits: ${#fruits[@]}"
+
+# Remove an element (Banana)
+unset fruits[1]
+
+# Print updated array
+echo "Remaining Fruits:"
+for fruit in "${fruits[@]}"
+do 
+   echo "$fruit"
+done
+========================
+
+#! /bin/bash
+
+echo "All fruits"
+declare -a fruits={"apple" "banana" "orange"}
+
+for fruit in "${fruits[@]}"
+do 
+  echo "$fruit"
+done
+
